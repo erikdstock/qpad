@@ -1,19 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { ThemeProvider } from "theme-ui-native";
+import { HomeScreen } from "./src/HomeScreen";
+import { theme } from "./src/theme";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+      <SafeAreaView style={styles.container}>
+        <HomeScreen />
+      </SafeAreaView>
+    </ThemeProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: theme.colors.background,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
