@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "electron": "^6.0.12",
     "expo": "~40.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -9,6 +10,8 @@
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@expo/electron-adapter": "^0.0.53",
+    "@expo/webpack-config": "^0.12.66",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "typescript": "~4.0.0"
